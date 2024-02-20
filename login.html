@@ -27,14 +27,25 @@
                 <p style="text-align: center; color:var(gris_oscuro);">Ingreso al Sistema</p>
                 <form>
                     <label>Usueario</label>
-                    <input type="text" />
+                    <input type="text" id="usuario"/>
                     <label>Clave</label>
-                    <input type="password" />
+                    <input type="password" id="clave" />
                     <button>Ingresar</button>
                 </form>
             </div>
     </div>
     <p>Hailyen Grajales - SystemPlus Popayán</p>
+    <script>
+        function ingresarAlSistema(){
+            const inputUsuario = document.getElementById('usuario');
+            const inputClave = document.getElementById('clave');
+            if(inputUsuario.value== "Hailyen" && inputClave.value ==123456789)
+                alert("Puedes Ingresr al Sistema");
+            else{
+                alert("No Esta Autorizado a Ingrasar")
+            }
+        }
+    </script>
 </body>
 
 </html>
