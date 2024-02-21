@@ -90,7 +90,26 @@ header{
 }
 .cuadricula{
     display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-content: center;
+    gap: 35px;
+    width: 50%;
+    margin: 0 auto;
+    height: 100vh;
 }
+.boton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    h3{
+        margin-top: 10px;
+    }
+}
+
 .boton-menu{
     background-color: white;
     width: 120px;
@@ -100,7 +119,14 @@ header{
     align-items: center;
     border-radius: 20px;
     box-shadow: 4px 4px 10px var(--grisOscuro);
-}
-i{
-    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+
+    &:hover{
+        background-color: var(--rojoPrincipal);
+        color: white;
+    }
+    i{
+        font-size: 2rem;
+    }
 }
