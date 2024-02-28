@@ -24,8 +24,9 @@ if ($conexion->connect_error) {
     $vehiculos = $resultado->fetch_all(MYSQLI_ASSOC);
 
 ?>
+<h3 style="padding-left: 2rem;">Vehiculos Parqieados</h3>
 <div class="contenedor-listado-paqueados">
-    <h3>Vehículo Parqueados</h3>
+
     <table class="tabla">
         <thead>
             <tr>

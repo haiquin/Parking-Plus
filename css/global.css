@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
 }
-
+a{
+  text-decoration: none;
+  color: inherit;
+}
 :root {
   --rojoPrincipal: #cb341d;
   --grisClaro: #d9d9d9;
